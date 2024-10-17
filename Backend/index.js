@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-// import resultsRouter from "./route/results.js";
+
 
 import TestRoute from "./route/test.route.js";
 import userRoute from "./route/user.route.js";
@@ -31,7 +31,7 @@ try {
 // defining routes
 app.use("/Test", TestRoute);
 app.use("/user", userRoute);
-// app.use('/api/results', resultsRouter);
+
 
 
 app.listen(PORT, () => {
