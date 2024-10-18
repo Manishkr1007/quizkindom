@@ -8,15 +8,7 @@ import TestRoute from "./route/test.route.js";
 import userRoute from "./route/user.route.js";
 // Other middleware and route definitions
 
-// Serve Vercel toolbar and other non-essential paths with a fallback
-app.get('/?vercelToolbarCode=:code', (req, res) => {
-    res.status(204).end();  // 204 No Content, safe to ignore Vercel-specific requests
-  });
-  
-  // Handle undefined routes (Fallback)
-  app.use((req, res) => {
-    res.status(404).json({ message: "Resource not found" });
-  });
+
   
 
 const app = express();
