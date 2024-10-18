@@ -12,8 +12,8 @@ function FreeCourse() {
   useEffect(() => {
     const getTest = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/test");
-
+        const res = await axios.get("quizkindomserver.vercel.app/test");
+         
         const data = res.data.filter((data) => data.category === "Free");
         console.log(data);
         setTest(data);
@@ -71,6 +71,7 @@ function FreeCourse() {
         <div>
           <Slider {...settings}>
             {test.map((item) => (
+            
               <Cards item={item} className="p-48" key={item.id} />
             ))}
           </Slider>

@@ -61,7 +61,7 @@ function QuizPage() {
       totalQuestions: questions.length,
     };
 
-    axios.post("http://localhost:4001/api/results", resultData)
+    axios.post("quizkindomserver.vercel.app/api/results", resultData)
       .then((response) => {
         console.log("Result saved to backend:", response.data);
       })

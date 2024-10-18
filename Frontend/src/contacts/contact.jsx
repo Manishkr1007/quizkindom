@@ -30,7 +30,7 @@ const Contact = () => {
 
     try {
       // Replace with your backend URL for handling contact form submission
-      await axios.post('http://localhost:4001/api/contact', formData);
+      await axios.post('quizkindomserver.vercel.app/api/contact', formData);
       setFormStatus({ loading: false, success: true });
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {

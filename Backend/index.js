@@ -6,7 +6,7 @@ import cors from "cors";
 
 import TestRoute from "./route/test.route.js";
 import userRoute from "./route/user.route.js";
-// Other middleware and route definitions
+
 
 
   
@@ -36,6 +36,7 @@ try {
 // defining routes
 app.use("/Test", TestRoute);
 app.use("/user", userRoute);
+
 
 
 

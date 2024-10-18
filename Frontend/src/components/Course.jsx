@@ -7,7 +7,7 @@ function Course() {
   useEffect(() => {
     const getTest = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/test");
+        const res = await axios.get("quizkindomserver.vercel.app/test");
         console.log(res.data);
         setTest(res.data);
       } catch (error) {
