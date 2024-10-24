@@ -42,41 +42,41 @@ const Contact = () => {
     <>
       <Navbar />
       <div className="min-h-screen flex flex-col justify-center items-center dark:bg-slate-900 text-white p-4">
-        <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
+        <div className="w-full max-w-lg bg-slate-800 p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold text-center mb-6 text-pink-500">Contact Us</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-gray-700">Name</label>
+              <label htmlFor="name" className="block text-gray-300">Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                className="w-full px-3 py-2 border dark:bg-slate-900 border-gray-300 rounded-md"
                 required
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-gray-700">Email</label>
+              <label htmlFor="email" className="block text-gray-300">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                className="w-full px-3 py-2 border dark:bg-slate-900 border-gray-300 rounded-md"
                 required
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-gray-700">Message</label>
+              <label htmlFor="message" className="block text-gray-300">Message</label>
               <textarea
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                className="w-full px-3 py-2 border dark:bg-slate-900 border-gray-300 rounded-md"
                 rows="4"
                 required
               />
@@ -84,7 +84,7 @@ const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="w-full px-4 py-2  bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300transition"
+                className="w-full px-4 py-2  bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300 transition"
                 disabled={formStatus.loading}
               >
                 {formStatus.loading ? 'Sending...' : 'Send Message'}

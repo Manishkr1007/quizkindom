@@ -9,7 +9,7 @@ function Cards({ item }) {
     if (item.category === "Free") {
       navigate(`/quiz/${item.name.toLowerCase()}`); // Navigate to quiz with dynamic subject
     } else {
-      navigate(`/checkout/${item.id}`); // Navigate to checkout for paid items
+      navigate(`/coming-soon/${item.id}`); // Navigate to checkout for paid items
     }
   };
 
@@ -27,7 +27,7 @@ function Cards({ item }) {
             </h2>
             <p>{item.title}</p>
             <div className="card-actions justify-between">
-              <div className="badge badge-outline">${item.price}</div>
+              <div className="badge badge-outline">Rs.{item.price}</div>
               <div
                 className="cursor-pointer px-2 py-1 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200"
                 onClick={handleBuyNow}

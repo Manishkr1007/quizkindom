@@ -1,9 +1,262 @@
 // quizData.js
 
 export const quizData = {
-    math: [
-      { question: "What is 2 + 2?", options: ["3", "4", "5"], answer: "4" },
-      { question: "What is 5 * 6?", options: ["30", "20", "25"], answer: "30" },
+    analogy: [
+      {
+        question: "Select the set in which the numbers are related in the same way as are the numbers of the following sets. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) (11, 57, 8) (12, 63, 9)",
+        options: ["(15, 75, 7)", "(10, 64, 6)", "(12, 54, 11)", "(12, 45, 8)"],
+        answer: "(10, 64, 6)"
+    },
+    {
+        question: "Select the set in which the members are related in the same way as are the numbers of the following sets (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) (5, 62, 7) (8, 188, 12)",
+        options: ["(6, 117, 19)", "(11, 390, 13)", "(10, 181, 9)", "(7, 114, 9)"],
+        answer: "(7, 114, 9)"
+    },
+    {
+        question: "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 14 : 203 :: 16 : 264 :: 18 : ?",
+        options: ["347", "423", "333", "353"],
+        answer: "333"
+    },
+    {
+        question: "KIT 20 is related to PRG 50 in a certain way. In the same way, ENT 16 is related to VMG 40. To which of the following is MFG 18 related following the same logic?",
+        options: ["NVT 45", "QUT 45", "NUT 45", "NUT 40"],
+        answer: "NUT 45"
+    },
+    {
+        question: "BTE 11 is related to DVG120 in a certain way. In the same way, PAN 9 is related to RCP 80. To which of the following is GMT 12 related following the same logic?",
+        options: ["IOW 143", "IOV 119", "IOV 143", "IOV 120"],
+        answer: "IOV 143"
+    },
+    {
+        question: "Select the set in which the numbers are related in the same way as are the numbers of the following sets. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) (2, 4, 18) (4, 6, 50)",
+        options: ["(6, 7, 65)", "(3, 5, 32)", "(5, 4, 18)", "(2, 5, 49)"],
+        answer: "(5, 4, 18)"
+    },
+    {
+        question: "Select the option which is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 34 : 51 :: 28: 42 :: 46 : ?",
+        options: ["53", "26", "69", "35"],
+        answer: "26"
+    },
+    {
+        question: "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. (Note: operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) 16 : 2 :: 36 : 3 :: 64 : ?",
+        options: ["6", "5", "4", "3"],
+        answer: "4"
+    },
+    {
+        question: "FM 25 is related to IJ 125 in a certain way. In the same way, NO 36 is related to QL 216. To which of the following is MP16 related following the same logic?",
+        options: ["ON 64", "PN 64", "PM 64", "PM 32"],
+        answer: "PM 64"
+    },
+    {
+        question: "Select the set in which the numbers are related in the same way as are the numbers of the following sets. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) (3, 5, 21) (4, 2, 14)",
+        options: ["(6, 3, 12)", "(8, 4, 28)", "(5, 2, 19)", "(7, 1, 23)"],
+        answer: "(5, 2, 19)"
+    },
+    {
+        question: "Select the set in which the numbers are related in the same way as are the numbers of the following sets. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) (21, 225, 9) (4, 25, 6)",
+        options: ["(13, 81, 6)", "(11, 18, 7)", "(14, 64, 2)", "(15, 54, 32)"],
+        answer: "(11, 18, 7)"
+    },
+    {
+        question: "HARKED is related to RAHDEK in a certain way. In the same way, RACIAL is related to CARLAI. To which of the following is NIMBLE related, following the same logic?",
+        options: ["MINLEB", "NIMELB", "MINELB", "NIMLEB"],
+        answer: "MINELB"
+    },
+    {
+        question: "Select the option that is related to the fifth letter-cluster in the same way as the second letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related to the third letter-cluster. BFHN : HBDI :: DHFM : JDBH :: FSWL : ?",
+        options: ["LOSG", "KPSH", "KOTF", "LPSF"],
+        answer: "KOTF"
+    },
+    {
+        question: "Select the option that is not related to the fifth number in the same way as the second number is related to the first number, and the fourth number is related to the third number. 40 : 45 :: 68 : 77 :: 104 ?",
+        options: ["119", "121", "115", "117"],
+        answer: "115"
+    },
+    {
+        question: "15 PK is related to 225 SQ in a certain way. 16 TQ is related to 256 WW in the same manner. Following the same logic, 14 OK is related to which of the following?",
+        options: ["198 RQ", "196 RQ", "56 RQ", "196RR"],
+        answer: "198 RQ"
+    },
+    {
+        question: "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) 13 : 195 :: 2 : 8 :: 12 : ?",
+        options: ["48", "168", "180", "24"],
+        answer: "24"
+    },
+    {
+        question: "VM 19 is related to SJ 25 in a certain way. In the same way, HN 17 is related to EK 23. To which of the following is SL 15 related following the same logic?",
+        options: ["MQ 24", "QI 21", "RJ 19", "PI 21"],
+        answer: "QI 21"
+    },
+    {
+        question: "Select the option in which the numbers are related in the same way as are the numbers of the given sets. (NOTE: Operations should be performed on the whole numbers without breaking down the numbers into its constituent digits.) (4, 13, 3) (4, 19, 5)",
+        options: ["(18, 28, 2)", "(6, 14, 2)", "(1, 25, 8)", "(5, 30, 7)"],
+        answer: "(6, 14, 2)"
+    },
+    {
+        question: "Select the option that is related to the fifth number in the same way as the fourth number is related to the third number and the second number is related to the first number. 4 : 9 :: 5 : 12 :: 3 : ?",
+        options: ["6", "11", "8", "7"],
+        answer: "7"
+    },
+    {
+        question: "ZR 18 is related to UW 11 in a certain way. In the same way, YM 24 is related to TR17. To which of the following is KJ 35 related following the same logic?",
+        options: ["FO 28", "GP 27", "FP 27", "GO 28"],
+        answer: "FP 27"
+    },
+    {
+      question: "Select the set in which the numbers are related in the same way as are the numbers of the following sets. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) (14, 336, 8) (12, 324, 9)",
+      options: ["(18, 378, 7)", "(18, 368, 7)", "(18, 398, 7)", "(18, 478, 7)"],
+      answer: "(18, 378, 7)"
+  },
+  {
+      question: "Select the option that is related to the third term in the same way as the second term is related to the first term and the sixth term is related to the fifth term. 231 : 334 :: 289 : ? :: 319 : 422",
+      options: ["394", "393", "395", "392"],
+      answer: "394"
+  },
+  {
+      question: "Select the option in which the numbers are related in the same way as are the numbers of the following sets. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) (289, 192, 95) (375, 278, 181)",
+      options: ["(421, 324, 225)", "(421, 324, 227)", "(420, 324, 227)", "(421, 322, 227)"],
+      answer: "(421, 324, 225)"
+  },
+  {
+      question: "Select the set in which the numbers are related in the same way as are the numbers of the following sets. (NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits.) (24, 42) (36, 63)",
+      options: ["(52, 91)", "(40, 82)", "(48, 96)", "(36, 91)"],
+      answer: "(36, 91)"
+  },
+  {
+      question: "Select the option that is related to the fifth number in the same way as the second number is related to the first number and the fourth number is related to the third number. 48 : 5 :: 96 : 7 :: 6 : ?",
+      options: ["36", "10", "4", "41"],
+      answer: "10"
+  },
+  {
+      question: "Select the option that is related to the third term in the same way as the second term is related to the first term and the sixth term is related to the fifth term. 27 : 6 :: 18 : ? :: 36 : 8",
+      options: ["4", "6", "3", "5"],
+      answer: "6"
+  },
+  {
+      question: "Select the option that is related to the fifth term in the same way as the fourth term is related to the third term and the second term is related to the first term. SPACE : URCEG :: PLANET : RNCPGV :: MACHINE : ?",
+      options: ["OCEJKPG", "KYAJKPG", "KYAFGLC", "OCEFGPG"],
+      answer: "OCEFGPG"
+  },
+  {
+      question: "Select the option that is related to the fifth letter-cluster in the same way as the fourth letter-cluster is related to the third letter-cluster and the second letter-cluster is related to the first letter-cluster. HTWCGY : WTHCGY :: ALTMHY : TLAMHY :: LGETDR : ?",
+      options: ["RDTEGL", "EGLRTD", "EGLTDR", "EGTLD"],
+      answer: "RDTEGL"
+  },
+  {
+      question: "Select the option that is related to the fifth letter-cluster in the same way as the fourth letter-cluster is related to the third letter-cluster and the second letter-cluster is related to the first letter-cluster. AYTRES : SFTUZB :: MINTED : UFEOJN :: LTREAD : ?",
+      options: ["FBETRS", "DFRHRE", "FBESUM", "DFRERT"],
+      answer: "FBETRS"
+  },
+  {
+      question: "Select the option that is related to the fifth alphanumeric cluster in the same way as the second alphanumeric cluster is related to the first alphanumeric cluster and the fourth alphanumeric cluster is related to the third alphanumeric cluster. HR12 : MY36 :: EJ14 : JQ42 :: PB17 : ?",
+      options: ["VE36", "UI51", "UF32", "VF34"],
+      answer: "UF32"
+  },
+  {
+      question: "Select the option that is related to the fifth letter-cluster in the same way as the second letter-cluster is related to the first letter-cluster and the fourth letter-cluster is related to the third letter-cluster. PJEB : SQHI :: MCQX : PJTE :: LRCT : ?",
+      options: ["QWHY", "OWFY", "QYHA", "OYFA"],
+      answer: "QYHA"
+  },
+  {
+      question: "Select the option that is related to the fifth term in the way as the second term is related to the first term and the fourth term is related to the third term. Rahul : 12 :: Zenus : 17 :: Vinas : ?",
+      options: ["15", "13", "11", "14"],
+      answer: "13"
+  },
+  {
+      question: "Select the option that is related to the third term in the same way as the second term is related to the first term. Cat : Feline :: Dog : ?",
+      options: ["Bovine", "Equine", "Canine", "Ursine"],
+      answer: "Canine"
+  },
+  {
+      question: "'Neigh' is related to 'Horse' in the same way as 'Bleat' is related to ' ______'.",
+      options: ["Bear", "Dog", "Donkey", "Goat"],
+      answer: "Goat"
+  },
+  {
+      question: "Select the option that is related to the third letter-cluster in the same way as the second letter-cluster is related to the first letter cluster. KOPT : AEFJ :: QUVZ : ?",
+      options: ["NRSW", "OSTX", "PRUY", "GKLP"],
+      answer: "PRUY"
+  },
+  {
+      question: "Select the option that is related to the third term in the same way as the second term is related to the first term. DFB : GHC :: LNJ : ?",
+      options: ["LOJ", "OPK", "EGC", "OQM"],
+      answer: "OQM"
+  },
+  {
+      question: "Select the option that is related to the third word in the same way as the second word is related to the first word. Bihar : Jharkhand :: Chattisgarh :?",
+      options: ["Maharashtra", "Madhya Pradesh", "Ranchi", "Raipur"],
+      answer: "Raipur"
+  },
+  {
+      question: "Select the option that is related to the fourth number in the same way as the first number is related to the second number. 3 : 36 :: ? : 20736",
+      options: ["3456", "728", "81", "1728"],
+      answer: "729"
+  },
+  {
+      question: "If 34@24?6#5 = 131 and 15@18?3#9 = 81, then which of the numbers will be the value of the expression: 17@72?9#5",
+      options: ["81", "41", "51", "131"],
+      answer: "41"
+  },
+  {
+      question: "Select the option that is related to the third term in the same way as the second term is related to the first term. WAITER: 242923 :: JUMPER : ?",
+      options: ["312923", "312623", "302923", "252923"],
+      answer: "252923"
+  },
+  {
+      question: "Select the term that can replace the question mark (?) in the following analogy. STYLE : 81 : ARRIVAL:: CRACK :36 :?",
+      options: ["STREAM", "RIDE", "SMELL", "ROSE"],
+      answer: "ROSE"
+  },
+  {
+      question: "If 23 A 64 A 13 = 136423 and 9 A 57 A 12 = 12579, then 29 A 4 A 6 = ?",
+      options: ["6249", "6924", "6492", "6429"],
+      answer: "6429"
+  },
+  {
+      question: "Select the option that is related to the third term in the same way as the second term is related to the first term. FLPX : GJST :: HMRW : ?",
+      options: ["WDHO", "NSTG", "ZKYR", "IKUS"],
+      answer: "WDHO"
+  },
+  {
+      question: "Find the missing number to complete the given analogy. 2 : 7 : : 11 : ? : : 23 : 37",
+      options: ["19", "17", "21", "15"],
+      answer: "17"
+  },
+  {
+      question: "Select the number from the given alternatives which has the same relation with the fifth number as the second and fourth number with the first and third number respectively. 15 : 1365 :: 27 : 2817 :: 43: ?",
+      options: ["3489", "4123", "4893", "4493"],
+      answer: "4493"
+  },
+  {
+      question: "Which option will replace the question mark in the below series? A25 : Y1 : : L14 : ?",
+      options: ["H13", "13 H", "N12", "M12"],
+      answer: "M12"
+  },
+  {
+      question: "Select the option that is related to the third term in the same way as the second term is related to the first term. VERGT : TCPER :: FMZQO : ?",
+      options: ["ELYPN", "HOBSQ", "GNARP", "DKXOM"],
+      answer: "ELYPN"
+  },
+  {
+    question: "Arrange the following in a meaningful order: A. Pupa B. Imago C. Larva D. Egg",
+    options: [
+        "D → C → B → A",
+        "C → D → A → B",
+        "D → C → A → B",
+        "A → C → D → B"
+    ],
+    answer: "D → C → A → B"
+},
+{
+    question: "Select the option that is related to the third number in the same way as the second number is related to the first number. 4704 : 336 :: 2590 : ?",
+    options: [
+        "188",
+        "158",
+        "185",
+        "180"
+    ],
+    answer: "185"
+}
     ],
     science:[
     

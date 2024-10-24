@@ -9,9 +9,10 @@ import QuizPage from "./quiz/Quiz";
 import CheckoutPage from "./checkOut/checkoutpage";
 import Contact from "./contacts/contact";
 import About from "./about/about";
+import ComingSoon from "./coming_soon/comingsoon";
 function App() {
   const [authUser, setAuthUser] = useAuth();
-  console.log(authUser);
+ 
   return (
     <>
       <div className="dark:bg-slate-900 dark:text-white">
@@ -26,6 +27,7 @@ function App() {
           <Route path="/checkout/:id" element={<CheckoutPage />} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/coming-soon/:id" element={<ComingSoon />} />
         </Routes>
         <Toaster />
       </div>

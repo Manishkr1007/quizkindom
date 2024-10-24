@@ -15,7 +15,7 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-3xl text-pink-500 mt-12 font-extrabold mb-6">
-            Welcome to Our QuizKindom by Siddi Learning Hub
+            Welcome to Our Siddhi Learning Hub
           </h1>
           <p className="text-lg leading-relaxed">
             Our app is designed to provide a seamless and interactive experience
@@ -60,7 +60,7 @@ const About = () => {
           <h2 className="text-2xl text-pink-500 font-extrabold text-center mb-8">
             Meet the Team
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <motion.img
                 className="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-blue-500"
@@ -78,8 +78,19 @@ const About = () => {
                 alt="Team Member"
                 whileHover={{ scale: 1.05 }}
               />
-              <h3 className="text-xl font-semibold">Siddi Learning Hub</h3>
+              <h3 className="text-xl font-semibold">Siddhi Learning Hub</h3>
               <p className="text-lg">Test Provider</p>
+            </div>
+           
+            <div className="text-center">
+              <motion.img
+                className="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-blue-500"
+                src="https://via.placeholder.com/100"
+                alt="Team Member"
+                whileHover={{ scale: 1.05 }}
+              />
+              <h3 className="text-xl font-semibold">Sourav Singh</h3>
+              <p className="text-lg">Founder</p>
             </div>
           
           </div>

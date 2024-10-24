@@ -15,7 +15,7 @@ function FreeCourse() {
         const res = await axios.get("https://quizkindomserver.vercel.app/test");
          
         const data = res.data.filter((data) => data.category === "Free");
-        console.log(data);
+        
         setTest(data);
       } catch (error) {
         console.log(error);
@@ -68,11 +68,11 @@ function FreeCourse() {
           </p>
         </div>
 
-        <div>
+        <div className="w-full md:w-3/4 lg:w-1/2 mx-auto p-4">
           <Slider {...settings}>
-            {test.map((item) => (
+            {test.map((item,index) => (
             
-              <Cards item={item} className="p-48" key={item.id} />
+              <Cards item={item} className="p-48" key={item.id || index} />
             ))}
           </Slider>
         </div>

@@ -87,17 +87,17 @@ function Login() {
             </div>
 
             {/* Button */}
-            <div className="flex justify-around mt-6">
+            <div className="flex justify-around mt-6 p-2">
               <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                 Login
               </button>
-              <p>
+              <p className="p-2 ">
                 Not registered?{" "}
                 <Link
                   to="/signup"
                   className="underline text-blue-500 cursor-pointer"
                 >
-                  Signup
+                    Create an account 
                 </Link>{" "}
               </p>
             </div>
