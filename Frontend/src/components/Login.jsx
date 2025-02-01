@@ -9,6 +9,7 @@ function Login() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const baseURL =import.meta.env.VITE_DEV_URL;
 
   const onSubmit = async (data) => {
     const userInfo = {
@@ -16,7 +17,7 @@ function Login() {
       password: data.password,
     };
     await axios
-      .post("https://quizkindomserver.vercel.app/user/login", userInfo)
+      .post(`${baseURL}/api/v1/user/login`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

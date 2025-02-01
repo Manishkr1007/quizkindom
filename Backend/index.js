@@ -6,6 +6,7 @@ import cors from "cors";
 
 import TestRoute from "./route/test.route.js";
 import userRoute from "./route/user.route.js";
+import resultRoute from "./route/result.route.js";
 
 
 
@@ -35,7 +36,8 @@ try {
 
 // defining routes
 app.use("/Test", TestRoute);
-app.use("/user", userRoute);
+app.use("/api/v1/user", userRoute);
+app.use("/api/v1/result", resultRoute);
 
 
 

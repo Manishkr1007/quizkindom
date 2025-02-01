@@ -10,6 +10,7 @@ import CheckoutPage from "./checkOut/checkoutpage";
 import Contact from "./contacts/contact";
 import About from "./about/about";
 import ComingSoon from "./coming_soon/comingsoon";
+import Profile from "./components/Profile/profile";
 function App() {
   const [authUser, setAuthUser] = useAuth();
  
@@ -28,6 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/coming-soon/:id" element={<ComingSoon />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
         <Toaster />
       </div>

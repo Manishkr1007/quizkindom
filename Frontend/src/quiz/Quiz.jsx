@@ -1,18 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { quizData } from "./quizData"; // Import the quiz data
+import { quizData } from "./quizData"; 
+import { useAuth } from "../context/AuthProvider";
+
+// Import the quiz data
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function QuizPage() {
+  const [authUser, setAuthUser] = useAuth();
   const { subject } = useParams();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [timeLeft, setTimeLeft] = useState(30); // 30 seconds per question
+  const baseURL =import.meta.env.VITE_DEV_URL;
 
   // Get questions for the selected subject
   const questions = quizData[subject] || [];
@@ -56,12 +61,15 @@ function QuizPage() {
 
   const saveResultToBackend = (finalScore) => {
     const resultData = {
+      name:authUser.fullname,
       subject: subject,
       score: finalScore,
-      totalQuestions: questions.length,
+      totalMarks: questions.length,
+      percentage: (finalScore / questions.length) * 100,
+
     };
 
-    axios.post("https://quizkindomserver.vercel.app/api/results", resultData)
+    axios.post(`${baseURL}/api/v1/result/saveResult`, resultData)
       .then((response) => {
         console.log("Result saved to backend:", response.data);
       })

@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../public/Banner.png";
+import banner from "/Banner.png";
 import { useNavigate } from "react-router-dom";
 
 function Banner() {
