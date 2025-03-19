@@ -67,6 +67,7 @@ export const login = async (req, res) => {
 
         // Generate a JWT token for the logged-in user
         const token = generateToken(user._id);
+        console.log(token);
 
         // Return the success response with the user details and token
         res.status(200).json({
@@ -82,4 +83,25 @@ export const login = async (req, res) => {
         console.log("Error: " + error.message);
         res.status(500).json({ message: "Internal server error" });
     }
+};
+
+export const getUserProfile = async (req, res) => {
+    try {
+        // Ensure that the user ID exists in the request object
+        if (!req.user || !req.user._id) {
+            return res.status(401).json({ message: "Unauthorized access" });
+        }
+
+        // Fetch the user from the database (excluding password for security)
+        const user = await User.findById(req.user._id).select("-password");
+
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        res.status(200).json({ user });
+    } catch (error) {
+        console.log("Error: " + error.message);
+        res.status(500).json({ message: "Internal server error" });
+    }   
 };

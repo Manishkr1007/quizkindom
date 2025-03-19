@@ -429,6 +429,658 @@ export const quizData = {
       { question: "What is the speed of light?", options: ["300,000 km/s", "150,000 km/s", "450,000 km/s"], answer: "300,000 km/s" },
       { question: "What force keeps planets in orbit?", options: ["Electromagnetic", "Gravitational", "Nuclear"], answer: "Gravitational" },
     ],
+
+     d2d_science:[
+      {
+        question: "What is elasticity?",
+        options: [
+          "The property of a body to regain its original shape after deformation",
+          "The property of a body to break under stress",
+          "The property of a body to remain deformed after force is removed",
+          "The property of a body to resist any deformation"
+        ],
+        answer: "The property of a body to regain its original shape after deformation",
+      },
+      {
+        question: "Which of the following is an example of an elastic material?",
+        options: ["Clay", "Rubber", "Plastic", "Stone"],
+        answer: "Rubber",
+      },
+      {
+        question: "What is the internal restoring force in an elastic body?",
+        options: [
+          "A force that opposes deformation",
+          "A force that causes deformation",
+          "A force that breaks the body",
+          "A force that increases deformation"
+        ],
+        answer: "A force that opposes deformation",
+      },
+      {
+        question: "What happens to an elastic body when the deforming force is removed?",
+        options: ["It remains deformed", "It regains its original shape", "It breaks", "It becomes plastic"],
+        answer: "It regains its original shape",
+      },
+      {
+        question: "Which of the following materials is most elastic?",
+        options: ["Glass", "Steel", "Rubber", "Clay"],
+        answer: "Steel",
+      },
+      {
+        question: "What is plasticity?",
+        options: [
+          "The property of a body to regain its original shape after deformation",
+          "The property of a body to remain deformed after force is removed",
+          "The property of a body to resist deformation",
+          "The property of a body to break under stress"
+        ],
+        answer: "The property of a body to remain deformed after force is removed",
+      },
+      {
+        question: "Which of the following is an example of a plastic material?",
+        options: ["Rubber", "Steel", "Clay", "Glass"],
+        answer: "Clay",
+      },
+      {
+        question: "What is rigidity?",
+        options: [
+          "The property of a body to resist deformation",
+          "The property of a body to regain its shape after deformation",
+          "The property of a body to remain deformed after force is removed",
+          "The property of a body to break under stress"
+        ],
+        answer: "The property of a body to resist deformation",
+      },
+      {
+        question: "Which property is exhibited by a rubber band?",
+        options: ["Elasticity", "Plasticity", "Rigidity", "None of the above"],
+        answer: "Elasticity",
+      },
+      {
+        question: "A force of 10 N is applied to a rubber band, and it stretches by 2 cm. What is the spring constant (k) of the rubber band?",
+        options: ["5 N/m", "20 N/m", "500 N/m", "0.2 N/m"],
+        answer: "500 N/m",
+      },
+      {
+        question: "A uniform chain of length 2m is kept on a table such that 60cm hangs freely from the edge. The total mass is 4kg. What is the work done in pulling the entire chain on the table?",
+        options: ["12J", "7.2J", "3.6J", "1.2J"],
+        answer: "3.6J",
+      },
+    ],
+    d2d_stress_and_strain:[
+      {
+        "question": "What is stress?",
+        "options": [
+          "The internal restoring force per unit cross-sectional area",
+          "The external force applied on a body",
+          "The change in dimensions per unit original dimensions",
+          "The ratio of lateral displacement to distance"
+        ],
+        "answer": "The internal restoring force per unit cross-sectional area"
+      },
+      {
+        "question": "What is the SI unit of stress?",
+        "options": ["N/m²", "dyne/cm²", "Pa", "Both a) and c)"],
+        "answer": "Both a) and c)"
+      },
+      {
+        "question": "What are the dimensions of stress?",
+        "options": ["[M L T⁻²]", "[M L⁻¹ T⁻²]", "[M L² T⁻²]", "[M L⁻² T⁻²]"],
+        "answer": "[M L⁻¹ T⁻²]"
+      },
+      {
+        "question": "Which of the following is a type of stress?",
+        "options": ["Tensile stress", "Volume stress", "Shearing stress", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is tensile stress?",
+        "options": [
+          "Stress due to change in length",
+          "Stress due to change in volume",
+          "Stress due to change in shape",
+          "Stress due to lateral displacement"
+        ],
+        "answer": "Stress due to change in length"
+      },
+      {
+        "question": "What is volume stress?",
+        "options": [
+          "Stress due to change in length",
+          "Stress due to change in volume",
+          "Stress due to change in shape",
+          "Stress due to lateral displacement"
+        ],
+        "answer": "Stress due to change in volume"
+      },
+      {
+        "question": "What is shearing stress?",
+        "options": [
+          "Stress due to change in length",
+          "Stress due to change in volume",
+          "Stress due to change in shape",
+          "Stress due to lateral displacement"
+        ],
+        "answer": "Stress due to change in shape"
+      },
+      {
+        "question": "Which of the following is true about stress?",
+        "options": [
+          "It is a scalar quantity",
+          "It is a vector quantity",
+          "It has both magnitude and direction",
+          "It is dimensionless"
+        ],
+        "answer": "It has both magnitude and direction"
+      },
+      {
+        "question": "What is the CGS unit of stress?",
+        "options": ["N/m²", "dyne/cm²", "Pa", "Both b) and c)"],
+        "answer": "dyne/cm²"
+      },
+      {
+        "question": "What is the relationship between stress and strain?",
+        "options": [
+          "Stress = Strain × Young's modulus",
+          "Strain = Stress × Young's modulus",
+          "Stress = Strain / Young's modulus",
+          "Strain = Stress / Young's modulus"
+        ],
+        "answer": "Stress = Strain × Young's modulus"
+      },
+      {
+        "question": "What is strain?",
+        "options": [
+          "The internal restoring force per unit cross-sectional area",
+          "The change in dimensions per unit original dimensions",
+          "The external force applied on a body",
+          "The ratio of lateral displacement to distance"
+        ],
+        "answer": "The change in dimensions per unit original dimensions"
+      },
+      {
+        "question": "What is the unit of strain?",
+        "options": ["N/m²", "dyne/cm²", "No unit", "Pa"],
+        "answer": "No unit"
+      },
+      {
+        "question": "Which of the following is a type of strain?",
+        "options": ["Tensile strain", "Volume strain", "Shearing strain", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "What is tensile strain?",
+        "options": [
+          "Change in length per unit original length",
+          "Change in volume per unit original volume",
+          "Lateral displacement per unit distance",
+          "Change in shape per unit original shape"
+        ],
+        "answer": "Change in length per unit original length"
+      },
+      {
+        "question": "What is volume strain?",
+        "options": [
+          "Change in length per unit original length",
+          "Change in volume per unit original volume",
+          "Lateral displacement per unit distance",
+          "Change in shape per unit original shape"
+        ],
+        "answer": "Change in volume per unit original volume"
+      },
+      {
+        "question": "What is shearing strain?",
+        "options": [
+          "Change in length per unit original length",
+          "Change in volume per unit original volume",
+          "Lateral displacement per unit distance",
+          "Change in shape per unit original shape"
+        ],
+        "answer": "Lateral displacement per unit distance"
+      },
+      {
+        "question": "Which of the following is true about strain?",
+        "options": [
+          "It is a scalar quantity",
+          "It is a vector quantity",
+          "It has both magnitude and direction",
+          "It is dimensionless"
+        ],
+        "answer": "It is dimensionless"
+      },
+      {
+        "question": "What is the relationship between stress and strain?",
+        "options": [
+          "Stress = Strain × Young's modulus",
+          "Strain = Stress × Young's modulus",
+          "Stress = Strain / Young's modulus",
+          "Strain = Stress / Young's modulus"
+        ],
+        "answer": "Stress = Strain × Young's modulus"
+      },
+      {
+        "question": "What is the formula for tensile strain?",
+        "options": ["ΔL/L", "ΔV/V", "ΔA/A", "Δx/x"],
+        "answer": "ΔL/L"
+      },
+      {
+        "question": "What is the formula for volume strain?",
+        "options": ["ΔL/L", "ΔV/V", "ΔA/A", "Δx/x"],
+        "answer": "ΔV/V"
+      },
+      {
+        "question": "Which type of stress is associated with a change in length?",
+        "options": ["Tensile stress", "Volume stress", "Shearing stress", "None of the above"],
+        "answer": "Tensile stress"
+      },
+      {
+        "question": "Which type of stress is associated with a change in volume?",
+        "options": ["Tensile stress", "Volume stress", "Shearing stress", "None of the above"],
+        "answer": "Volume stress"
+      },
+      {
+        "question": "Which type of stress is associated with a change in shape?",
+        "options": ["Tensile stress", "Volume stress", "Shearing stress", "None of the above"],
+        "answer": "Shearing stress"
+      },
+      {
+        "question": "Which type of strain is associated with a change in length?",
+        "options": ["Tensile strain", "Volume strain", "Shearing strain", "None of the above"],
+        "answer": "Tensile strain"
+      },
+      {
+        "question": "Which type of strain is associated with a change in volume?",
+        "options": ["Tensile strain", "Volume strain", "Shearing strain", "None of the above"],
+        "answer": "Volume strain"
+      },
+      {
+        "question": "Which type of strain is associated with a change in shape?",
+        "options": ["Tensile strain", "Volume strain", "Shearing strain", "None of the above"],
+        "answer": "Shearing strain"
+      },
+      {
+        "question": "What is the formula for shearing strain?",
+        "options": ["ΔL/L", "ΔV/V", "Δx/x", "tan θ"],
+        "answer": "tan θ"
+      },
+      {
+        "question": "What is the formula for tensile stress?",
+        "options": ["F/A", "F/V", "F/L", "F/x"],
+        "answer": "F/A"
+      },
+      {
+        "question": "What is the formula for volume stress?",
+        "options": ["F/A", "F/V", "F/L", "F/x"],
+        "answer": "F/A"
+      },
+      {
+        "question": "What is the formula for shearing stress?",
+        "options": ["F/A", "F/V", "F/L", "F/x"],
+        "answer": "F/A"
+      },
+      {
+        "question": "What is the relationship between stress and strain in the elastic limit?",
+        "options": ["Linear", "Non-linear", "Exponential", "Logarithmic"],
+        "answer": "Linear"
+      },
+      {
+        "question": "What is the slope of the stress-strain curve in the elastic limit called?",
+        "options": ["Young's modulus", "Bulk modulus", "Shear modulus", "Modulus of rigidity"],
+        "answer": "Young's modulus"
+      },
+      {
+        "question": "What is the area under the stress-strain curve called?",
+        "options": ["Work done", "Strain energy", "Elastic energy", "Potential energy"],
+        "answer": "Strain energy"
+      },
+      {
+        "question": "What is the maximum stress a material can withstand without permanent deformation called?",
+        "options": ["Yield strength", "Ultimate strength", "Breaking strength", "Elastic limit"],
+        "answer": "Elastic limit"
+      },
+      {
+        "question": "What is the stress at which a material breaks called?",
+        "options": ["Yield strength", "Ultimate strength", "Breaking strength", "Elastic limit"],
+        "answer": "Breaking strength"
+      },
+      {
+        "question": "What is the stress at which a material begins to deform plastically called?",
+        "options": ["Yield strength", "Ultimate strength", "Breaking strength", "Elastic limit"],
+        "answer": "Yield strength"
+      },
+      {
+        "question": "What is the ratio of lateral strain to longitudinal strain called?",
+        "options": ["Poisson's ratio", "Young's modulus", "Bulk modulus", "Shear modulus"],
+        "answer": "Poisson's ratio"
+      },
+      {
+        "question": "What is the ratio of stress to strain in the elastic limit called?",
+        "options": ["Young's modulus", "Bulk modulus", "Shear modulus", "Modulus of rigidity"],
+        "answer": "Young's modulus"
+      },
+      {
+        "question": "What is the ratio of volume stress to volume strain called?",
+        "options": ["Young's modulus", "Bulk modulus", "Shear modulus", "Modulus of rigidity"],
+        "answer": "Bulk modulus"
+      },
+      {
+        "question": "What is the ratio of shearing stress to shearing strain called?",
+        "options": ["Young's modulus", "Bulk modulus", "Shear modulus", "Modulus of rigidity"],
+        "answer": "Shear modulus"
+      }
+    ],
+   elasticlimit_and_hookeslaw : [
+      {
+        "question": "What is the elastic limit?",
+        "options": [
+          "The point where the material breaks",
+          "The maximum stress a material can withstand without permanent deformation",
+          "The point where stress and strain are no longer proportional",
+          "The point where the material becomes brittle"
+        ],
+        "answer": "The maximum stress a material can withstand without permanent deformation"
+      },
+      {
+        "question": "Hooke's Law states that within the elastic limit:",
+        "options": [
+          "Stress is inversely proportional to strain",
+          "Stress is directly proportional to strain",
+          "Strain is inversely proportional to stress",
+          "Strain is independent of stress"
+        ],
+        "answer": "Stress is directly proportional to strain"
+      },
+      {
+        "question": "If the elastic limit is exceeded, what happens to the material?",
+        "options": [
+          "It returns to its original shape",
+          "It undergoes permanent deformation",
+          "It becomes more elastic",
+          "It breaks immediately"
+        ],
+        "answer": "It undergoes permanent deformation"
+      },
+      {
+        "question": "The proportionality constant in Hooke's Law is called:",
+        "options": [
+          "Young's Modulus",
+          "Bulk Modulus",
+          "Modulus of Rigidity",
+          "Stress Constant"
+        ],
+        "answer": "Young's Modulus"
+      },
+      {
+        "question": "What is the SI unit of modulus of elasticity?",
+        "options": ["N/m", "N/m²", "N/m³", "N·m"],
+        "answer": "N/m²"
+      },
+      {
+        "question": "Young's Modulus is defined as the ratio of:",
+        "options": [
+          "Tensile stress to tensile strain",
+          "Shear stress to shear strain",
+          "Volume stress to volume strain",
+          "Compressive stress to compressive strain"
+        ],
+        "answer": "Tensile stress to tensile strain"
+      },
+      {
+        "question": "The dimensions of Young's Modulus are:",
+        "options": [
+          "[M¹ L⁻¹ T⁻²]",
+          "[M¹ L⁻² T⁻²]",
+          "[M² L⁻¹ T⁻²]",
+          "[M¹ L⁻¹ T⁻¹]"
+        ],
+        "answer": "[M¹ L⁻¹ T⁻²]"
+      },
+      {
+        "question": "Which of the following materials has the highest Young's Modulus?",
+        "options": ["Rubber", "Steel", "Wood", "Plastic"],
+        "answer": "Steel"
+      },
+      {
+        "question": "If the length of a wire is doubled, its Young's Modulus will:",
+        "options": ["Double", "Halve", "Remain the same", "Become zero"],
+        "answer": "Remain the same"
+      },
+      {
+        "question": "Young's Modulus is applicable only within:",
+        "options": [
+          "The plastic limit",
+          "The elastic limit",
+          "The breaking point",
+          "The fracture point"
+        ],
+        "answer": "The elastic limit"
+      },
+      {
+        "question": "Bulk Modulus is defined as the ratio of:",
+        "options": [
+          "Tensile stress to tensile strain",
+          "Shear stress to shear strain",
+          "Volume stress to volume strain",
+          "Compressive stress to compressive strain"
+        ],
+        "answer": "Volume stress to volume strain"
+      },
+      {
+        "question": "The SI unit of Bulk Modulus is:",
+        "options": ["N/m", "N/m²", "N/m³", "N·m"],
+        "answer": "N/m²"
+      },
+      {
+        "question": "A material with a high Bulk Modulus is:",
+        "options": [
+          "Easily compressible",
+          "Difficult to compress",
+          "Highly elastic",
+          "Brittle"
+        ],
+        "answer": "Difficult to compress"
+      },
+      {
+        "question": "If the volume of a material decreases under pressure, its Bulk Modulus is:",
+        "options": ["Positive", "Negative", "Zero", "Infinite"],
+        "answer": "Positive"
+      },
+      {
+        "question": "The Bulk Modulus of a perfect rigid body is:",
+        "options": ["Zero", "Infinite", "Equal to Young's Modulus", "Equal to Shear Modulus"],
+        "answer": "Infinite"
+      },
+      {
+        "question": "Modulus of Rigidity is defined as the ratio of:",
+        "options": [
+          "Tensile stress to tensile strain",
+          "Shear stress to shear strain",
+          "Volume stress to volume strain",
+          "Compressive stress to compressive strain"
+        ],
+        "answer": "Shear stress to shear strain"
+      },
+      {
+        "question": "The SI unit of Modulus of Rigidity is:",
+        "options": ["N/m", "N/m²", "N/m³", "N·m"],
+        "answer": "N/m²"
+      },
+      {
+        "question": "Modulus of Rigidity is also known as:",
+        "options": [
+          "Young's Modulus",
+          "Bulk Modulus",
+          "Shear Modulus",
+          "Elastic Modulus"
+        ],
+        "answer": "Shear Modulus"
+      },
+      {
+        "question": "For a fluid, the Modulus of Rigidity is:",
+        "options": ["Zero", "Infinite", "Equal to Bulk Modulus", "Equal to Young's Modulus"],
+        "answer": "Zero"
+      },
+      {
+        "question": "The Modulus of Rigidity is most relevant for:",
+        "options": ["Gases", "Liquids", "Solids", "Plasma"],
+        "answer": "Solids"
+      },
+      {
+        "question": "Stress is defined as:",
+        "options": [
+          "Force per unit area",
+          "Force per unit volume",
+          "Force per unit length",
+          "Force per unit mass"
+        ],
+        "answer": "Force per unit area"
+      },
+      {
+        "question": "Strain is defined as:",
+        "options": [
+          "Change in length per unit length",
+          "Change in volume per unit volume",
+          "Change in shape per unit shape",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "question": "The SI unit of stress is:",
+        "options": ["N/m", "N/m²", "N/m³", "N·m"],
+        "answer": "N/m²"
+      },
+      {
+        "question": "Strain is a:",
+        "options": [
+          "Scalar quantity",
+          "Vector quantity",
+          "Dimensionless quantity",
+          "Tensor quantity"
+        ],
+        "answer": "Dimensionless quantity"
+      },
+      {
+        "question": "Which of the following is a type of strain?",
+        "options": ["Tensile strain", "Shear strain", "Volumetric strain", "All of the above"],
+        "answer": "All of the above"
+      },
+      {
+        "question": "The relationship between Young's Modulus (Y), Bulk Modulus (K), and Modulus of Rigidity (η) is given by:",
+        "options": [
+          "Y = (9ηK)/(3K + η)",
+          "Y = (3ηK)/(9K + η)",
+          "Y = (9K + η)/(3ηK)",
+          "Y = (3K + η)/(9ηK)"
+        ],
+        "answer": "Y = (9ηK)/(3K + η)"
+      },
+      {
+        "question": "For an incompressible material, the Bulk Modulus is:",
+        "options": ["Zero", "Infinite", "Equal to Young's Modulus", "Equal to Shear Modulus"],
+        "answer": "Infinite"
+      },
+      {
+        "question": "If Young's Modulus (Y) and Modulus of Rigidity (η) are known, Bulk Modulus (K) can be calculated using:",
+        "options": [
+          "K = (9ηY)/(3Y - η)",
+          "K = (3ηY)/(9Y - η)",
+          "K = (9Y - η)/(3ηY)",
+          "K = (3Y - η)/(9ηY)"
+        ],
+        "answer": "K = (9ηY)/(3Y - η)"
+      },
+      {
+        "question": "For a material with a Poisson's ratio of 0.5, the relationship between Y and K is:",
+        "options": ["Y = 3K", "Y = 2K", "Y = K", "Y = 0.5K"],
+        "answer": "Y = 3K"
+      },
+      {
+        "question": "The Poisson's ratio (σ) is related to Y, K, and η by:",
+        "options": [
+          "σ = (3K - 2η)/(6K + 2η)",
+          "σ = (2η - 3K)/(6K + 2η)",
+          "σ = (3K + 2η)/(6K - 2η)",
+          "σ = (2η + 3K)/(6K - 2η)"
+        ],
+        "answer": "σ = (3K - 2η)/(6K + 2η)"
+      },
+      {
+        "question": "Which material is most likely to have the highest Young's Modulus?",
+        "options": ["Rubber", "Steel", "Wood", "Plastic"],
+        "answer": "Steel"
+      },
+      {
+        "question": "A wire stretches by 2 mm under a load. If the load is doubled, the extension will be:",
+        "options": ["1 mm", "2 mm", "4 mm", "8 mm"],
+        "answer": "4 mm"
+      },
+      {
+        "question": "The stress-strain curve for a brittle material is:",
+        "options": [
+          "Linear up to the breaking point",
+          "Nonlinear with a large plastic region",
+          "Linear with a small plastic region",
+          "Nonlinear with no plastic region"
+        ],
+        "answer": "Linear up to the breaking point"
+      },
+      {
+        "question": "The area under the stress-strain curve represents:",
+        "options": [
+          "Work done per unit volume",
+          "Force per unit area",
+          "Strain energy per unit volume",
+          "Modulus of elasticity"
+        ],
+        "answer": "Strain energy per unit volume"
+      },
+      {
+        "question": "Which of the following is NOT a type of modulus of elasticity?",
+        "options": [
+          "Young's Modulus",
+          "Bulk Modulus",
+          "Shear Modulus",
+          "Tensile Modulus"
+        ],
+        "answer": "Tensile Modulus"
+      },
+      {
+        "question": "The elastic energy stored in a wire is given by:",
+        "options": [
+          "(1/2) × Stress × Strain",
+          "Stress × Strain",
+          "(1/2) × Stress × Strain × Volume",
+          "Stress × Strain × Volume"
+        ],
+        "answer": "(1/2) × Stress × Strain × Volume"
+      },
+      {
+        "question": "If the radius of a wire is doubled, its Young's Modulus will:",
+        "options": ["Double", "Halve", "Remain the same", "Become zero"],
+        "answer": "Remain the same"
+      },
+      {
+        "question": "The modulus of elasticity is a measure of:",
+        "options": [
+          "Stiffness of a material",
+          "Ductility of a material",
+          "Brittleness of a material",
+          "Malleability of a material"
+        ],
+        "answer": "Stiffness of a material"
+      },
+      {
+        "question": "For a perfectly elastic material, the hysteresis loop area is:",
+        "options": ["Zero", "Maximum", "Equal to the work done", "Equal to the strain energy"],
+        "answer": "Zero"
+      },
+      {
+        "question": "The modulus of elasticity is highest for:",
+        "options": ["Gases", "Liquids", "Solids", "Plasma"],
+        "answer": "Solids"
+      }
+    ]
     // Add more subjects and questions as needed
   };
   
