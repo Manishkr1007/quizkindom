@@ -9,10 +9,11 @@ import axios from "axios";
 import Cards from "./Cards";
 function FreeCourse() {
   const [test, setTest] = useState([]);
+  const baseURL = import.meta.env.VITE_DEV_URL;
   useEffect(() => {
     const getTest = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/Test");
+        const res = await axios.get(`${baseURL}/Test`);
          
         const data = res.data.filter((data) => data.category === "Free");
         
