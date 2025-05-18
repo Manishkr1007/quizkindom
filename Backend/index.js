@@ -16,7 +16,10 @@ import unlockedTestRoute from "./route/unlockedTest.route.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin:process.env.FRONTEND_URL, // frontend origin
+  credentials: true // allow cookies/auth headers
+}));
 app.use(express.json());
 
 dotenv.config();
