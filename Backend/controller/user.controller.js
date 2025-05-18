@@ -32,6 +32,7 @@ export const signup = async (req, res) => {
 
         // Generate a JWT token for the new user
         const token = generateToken(createdUser._id);
+        console.log(token);
 
         // Return the success response with the token
         res.status(201).json({
