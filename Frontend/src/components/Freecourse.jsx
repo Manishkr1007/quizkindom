@@ -12,7 +12,7 @@ function FreeCourse() {
   useEffect(() => {
     const getTest = async () => {
       try {
-        const res = await axios.get("https://quizkindomserver.vercel.app/test");
+        const res = await axios.get("http://localhost:5000/Test");
          
         const data = res.data.filter((data) => data.category === "Free");
         

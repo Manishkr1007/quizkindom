@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 function Signup() {
   const location = useLocation();
   const navigate = useNavigate();
+  const baseurl = import.meta.env.VITE_DEV_URL;
   const from = location.state?.from?.pathname || "/";
   const {
     register,
@@ -21,7 +22,7 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post("https://quizkindomserver.vercel.app/user/signup", userInfo)
+      .post(`${baseurl}user/signup`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

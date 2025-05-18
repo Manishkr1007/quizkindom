@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
 function Course() {
+   const baseurl = import.meta.env.VITE_DEV_URL;
+
   const [test, setTest] = useState([]);
   useEffect(() => {
     const getTest = async () => {
       try {
-        const res = await axios.get("https://quizkindomserver.vercel.app/test");
+        const res = await axios.get(`${baseurl}Test`);
+        console.log(res.data);
         
         setTest(res.data);
       } catch (error) {

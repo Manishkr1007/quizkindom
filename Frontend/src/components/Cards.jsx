@@ -22,7 +22,7 @@ function Cards({ item }) {
           </figure>
           <div className="card-body">
             <h2 className="card-title">
-              {item.name}
+              {item.testname}
               <div className="badge badge-secondary">{item.category}</div>
             </h2>
             <p>{item.title}</p>

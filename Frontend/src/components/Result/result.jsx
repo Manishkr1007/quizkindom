@@ -1,4 +1,4 @@
-=import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -7,6 +7,8 @@ const ResultPage = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const navigate = useNavigate();
+  const baseurl = import.meta.env.VITE_DEV_URL;
+
 
     // Get user ID from localStorage
     const user = JSON.parse(localStorage.getItem("Users"));
@@ -21,7 +23,7 @@ const ResultPage = () => {
         const fetchResults = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:5000/api/results/${userId}`
+                    `${baseurl}results/${userId}`
                 );
                 setResults(response.data.results);
             } catch (error) {
