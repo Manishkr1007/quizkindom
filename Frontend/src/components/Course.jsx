@@ -10,7 +10,7 @@ function Course() {
   useEffect(() => {
     const getTest = async () => {
       try {
-        const res = await axios.get(`${baseurl}/Test`);
+        const res = await axios.get(`${baseurl}/test`);
         console.log(res.data);
         
         setTest(res.data);
