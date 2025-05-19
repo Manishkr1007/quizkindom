@@ -23,7 +23,7 @@ const ResultPage = () => {
         const fetchResults = async () => {
             try {
                 const response = await axios.get(
-                    `${baseurl}results/${userId}`
+                    `${baseurl}/results/${userId}`
                 );
                 setResults(response.data.results);
             } catch (error) {

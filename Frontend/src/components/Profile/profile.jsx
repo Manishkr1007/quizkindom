@@ -6,7 +6,7 @@ const Profile = () => {
 
     // Sample user data (Replace with actual user data)
     const user = {
-        name: "John Doe",
+        name: "ON development",
         email: "johndoe@example.com",
         avatar: "https://via.placeholder.com/150",
         id: "12345", // Replace with actual user ID

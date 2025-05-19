@@ -21,7 +21,7 @@ function QuizPage() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get(`${baseURL}question/question?topic=${subject}`);
+        const response = await axios.get(`${baseURL}/question/question?topic=${subject}`);
         const formattedQuestions = response.data.map((q) => ({
           question: q.question,
           options: Object.values(q.options),
@@ -75,7 +75,7 @@ function QuizPage() {
     };
 
     axios
-      .post(`${baseURL}result/saveResult`, resultData)
+      .post(`${baseURL}/result/saveResult`, resultData)
       .then((res) => console.log("Result saved:", res.data))
       .catch((err) => console.error("Error saving result:", err));
   };
