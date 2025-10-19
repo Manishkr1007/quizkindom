@@ -10,22 +10,38 @@ import resultRoute from "./route/result.route.js";
 import questionRoute from "./route/question.route.js";
 import unlockedTestRoute from "./route/unlockedTest.route.js";
 
-
-
-  
+// Load environment variables before using them
+dotenv.config();
 
 const app = express();
 
-app.use(cors({
-  origin:process.env.FRONTEND_URL, // frontend origin
-  credentials: true // allow cookies/auth headers
-}));
+// Allow JSON request bodies
 app.use(express.json());
 
-dotenv.config();
+// CORS configuration (supports multiple origins, proper preflight)
+const FRONTEND_URLS = (process.env.FRONTEND_URL || "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Allow non-browser tools (no Origin header)
+    if (!origin) return callback(null, true);
+    if (FRONTEND_URLS.length === 0) return callback(null, true); // dev fallback
+    if (FRONTEND_URLS.includes(origin)) return callback(null, true);
+    return callback(new Error("Not allowed by CORS"));
+  },
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+};
+
+app.use(cors(corsOptions));
+// Explicitly handle preflight requests
+app.options("*", cors(corsOptions));
 app.use(express.static('public'));
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 const URI = process.env.MongoDBURI;
 
 
@@ -42,6 +58,8 @@ mongoose.connection.once('open', async () => {
   const collections = await mongoose.connection.db.listCollections().toArray();
   console.log("📦 Collections in DB:", collections.map(c => c.name));
 });
+
+console.log("🚀 Server config:", { PORT, FRONTEND_URLS });
 
 // defining routes
 app.use("/api/v1/test", TestRoute);

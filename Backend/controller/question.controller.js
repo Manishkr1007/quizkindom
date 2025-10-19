@@ -1,19 +1,26 @@
-import questionModel from "../model/question.model.js";
+import questionModel, { getQuestionModel } from "../model/question.model.js";
 
 export const getQuestions = async (req, res) => {
   try {
-    const { topic, limit } = req.query;
+    const { topic, subject, limit } = req.query;
+
+ 
+    const collectionKey = (subject || topic || "questions").toString();
+    const Questions = getQuestionModel(collectionKey);
 
     let filter = {};
-    if (topic) {
-      filter.topic = { $regex: `^${topic}$`, $options: "i" }; 
+    if (topic && subject) {
+      filter.topic = { $regex: `^${topic}$`, $options: "i" };
     }
 
-    const questions = await questionModel
-      .find(filter)
-      .limit(Number(limit) || 0);
+    const parsedLimit = Number(limit);
+    const applyLimit = Number.isFinite(parsedLimit) && parsedLimit > 0 ? parsedLimit : 0;
 
-    console.log("Fetched questions:", questions);
+    const questions = await Questions
+      .find(filter)
+      .limit(applyLimit);
+
+    console.log(`Fetched questions from '${collectionKey}' collection:`, questions?.length ?? 0);
     res.status(200).json(questions);
   } catch (error) {
     console.error("Error fetching questions:", error);
