@@ -74,3 +74,17 @@ export const getTotalScore = async (req, res) => {
         res.status(500).json({ message: "Internal Server Error" });
     }
 };
+
+export const getResultsByUser = async (req, res) => {
+    try {
+        const { userId } = req.params;
+        if (!userId) {
+            return res.status(400).json({ message: "userId is required" });
+        }
+        const results = await Result.find({ userId });
+        res.status(200).json({ results });
+    } catch (error) {
+        console.error("Error fetching results by user:", error);
+        res.status(500).json({ message: "Internal Server Error" });
+    } 
+};

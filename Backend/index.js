@@ -9,6 +9,7 @@ import userRoute from "./route/user.route.js";
 import resultRoute from "./route/result.route.js";
 import questionRoute from "./route/question.route.js";
 import unlockedTestRoute from "./route/unlockedTest.route.js";
+import bookRoute from "./route/book.route.js";
 
 // Load environment variables before using them
 dotenv.config();
@@ -67,6 +68,7 @@ app.use("/api/v1/user", userRoute);
 app.use("/api/v1/result", resultRoute);
 app.use("/api/v1/question", questionRoute);
 app.use("/api/v1/unlocked-tests",unlockedTestRoute); 
+app.use("/api/v1/book", bookRoute);
 
 
 
