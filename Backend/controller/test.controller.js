@@ -1,3 +1,15 @@
+export const getTestById = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const test = await Test.findById(id);
+        if (!test) {
+            return res.status(404).json({ message: "Test not found" });
+        }
+        res.status(200).json(test);
+    } catch (error) {
+        res.status(500).json({ message: "Internal server error" });
+    }
+};
 import Test from "../model/test.model.js";
 
 export const getTest = async(req, res) => {

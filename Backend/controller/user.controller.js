@@ -1,3 +1,34 @@
+// GET /api/v1/user/:id
+export const getUserById = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const user = await User.findById(id);
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+        res.status(200).json(user);
+    } catch (error) {
+        res.status(500).json({ message: "Internal server error" });
+    }
+};
+// POST /api/v1/user/upsert
+export const upsertUser = async (req, res) => {
+    try {
+        console.log("[upsertUser] API hit. Body:", req.body);
+        const { id, email, fullname } = req.body;
+        if (!id || !email || !fullname) {
+            return res.status(400).json({ message: "id, email, and fullname are required" });
+        }
+        await User.updateOne(
+            { _id: id },
+            { $set: { email, fullname } },
+            { upsert: true }
+        );
+        res.json({ success: true });
+    } catch (error) {
+        res.status(500).json({ message: "Internal server error" });
+    }
+};
 import User from "../model/user.model.js";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";

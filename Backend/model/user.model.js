@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema({
+    _id: { type: String, required: true },
     fullname: {
         type: String,
         required: true,
@@ -14,6 +15,7 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    unlockedTests: [{ type: String }]
 });
 const User = mongoose.model("User", userSchema);
 export default User;
