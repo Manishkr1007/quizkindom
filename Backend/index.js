@@ -8,7 +8,7 @@ import TestRoute from "./route/test.route.js";
 import userRoute from "./route/user.route.js";
 import resultRoute from "./route/result.route.js";
 import questionRoute from "./route/question.route.js";
-import unlockedTestRoute from "./route/unlockedTest.route.js";
+import unlockedTestRoute from "./route/unlockedtest.route.js";
 import bookRoute from "./route/book.route.js";
 import paymentRoute from "./route/payment.route.js";
 
