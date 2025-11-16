@@ -21,7 +21,7 @@ const app = express();
 app.use(express.json());
 
 // CORS configuration (supports multiple origins, proper preflight)
-const FRONTEND_URLS = (process.env.FRONTEND_URL || "")
+const FRONTEND_URLS = (process.env.FRONTEND_URL || "https://quizzer-h5qnr3yo5-manishkrs-projects.vercel.app")
   .split(",")
   .map((s) => s.trim())
   .filter(Boolean);
