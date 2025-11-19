@@ -1,3 +1,15 @@
+import Test from "../model/test.model.js";
+
+export const getTest = async(req, res) => {
+    try {
+        const test = await Test.find();
+        res.status(200).json(test);
+    } catch (error) {
+        console.log("Error: ", error);
+        res.status(500).json({ message: "Internal server error" });
+    }
+};
+
 export const getTestById = async (req, res) => {
     try {
         const { id } = req.params;
@@ -10,22 +22,10 @@ export const getTestById = async (req, res) => {
         res.status(500).json({ message: "Internal server error" });
     }
 };
-import Test from "../model/test.model.js";
-
-export const getTest = async(req, res) => {
-    try {
-        const test = await Test.find();
-        res.status(200).json(test);
-    } catch (error) {
-        console.log("Error: ", error);
-        res.status(500).json(error);
-    }
-};
-
 
 export const addTest = async (req, res) => {
     try {
-        const { testname, title, price, category, image ,name} = req.body;
+        const { testname, title, price, category, image, name } = req.body;
         if (!testname || !title || !price || !category || !image || !name) {
             return res.status(400).json({ message: "All fields are required" });
         }
@@ -43,8 +43,6 @@ export const addTest = async (req, res) => {
     }
 };
 
-
-// DELETE /api/v1/test/:id
 export const deleteTest = async (req, res) => {
     try {
         const { id } = req.params;
