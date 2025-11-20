@@ -5,8 +5,8 @@ export const getTest = async(req, res) => {
         const test = await Test.find();
         res.status(200).json(test);
     } catch (error) {
-        console.log("Error: ", error);
-        res.status(500).json({ message: "Internal server error" });
+        console.error("[getTest] Error:", error.message);
+        res.status(500).json({ message: "Internal server error", error: error.message });
     }
 };
 
