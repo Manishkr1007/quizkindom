@@ -51,8 +51,12 @@ export const signup = async (req, res) => {
         // Hash the password before saving
         const hashPassword = await bcryptjs.hash(password, 10);
 
+        // Generate a unique string ID for the user
+        const userId = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+
         // Create a new user
         const createdUser = new User({
+            _id: userId,
             fullname: fullname,
             email: email,
             password: hashPassword,
